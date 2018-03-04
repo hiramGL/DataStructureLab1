@@ -22,8 +22,6 @@ public class Arithmetic extends Progression {
 		
 	}
 	public double getTerm(int n) throws IndexOutOfBoundsException{
-		if(n<= 0)
-			throw new IndexOutOfBoundsException(""getTerms: Invalid argument value = "+ n);
 		return this.firstValue() + this.commonDifference * (n - 1);
 	}
 
