@@ -18,9 +18,9 @@ public class Geometric extends Progression {
 		return "Geom" + "("+ (int)this.firstValue() + ", " + (int)this.commonFactor + ")"; 
 	}
 	
-	public double getTerm(int n) throws IndexOutOfBoundsException{
-		//need implement
-		return commonFactor;
+	public double getTerm(int index) throws IndexOutOfBoundsException{
+		
+		return this.firstValue()*Math.pow(this.commonFactor, index - 1);
 		
 	}
 
